@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 
 class App extends React.Component {
  state = {
-   isLoading: true
+   isLoading: true,
+   movies: []
  };
   componentDidMount() {
     setTimeout(() => {
