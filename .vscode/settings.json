@@ -1,0 +1,16 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    
+     "[javascriptreact]": {
+         "editor.defaultFormatter": "esbenp.prettier-vscode",
+         "editor.formatOnSave": true
+    },
+    "prettier.jsxBracketSameLine": true,
+}   

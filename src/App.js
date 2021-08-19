@@ -1,40 +1,15 @@
 import React from 'react'
-import axios from 'axios'
-import Moive from './Movie'
+import About from './routers/About'
+import {HashRouter, HashROuter, Route} from 'react-router-dom'
+import Home from './routers/Home'
 
-class App extends React.Component {
- state = {
-   isLoading: true,
-   movies: []
- };
-
- getMovies = async () => {
-  const {data:{data:{movies}}} = await axios.get('https://yts.mx/api/v2/list_movies.json?sort_by=rating')
-  this.setState({movies, isLoading: false})
- }
-componentDidMount() {
-  this.getMovies();
+const App = () => {
+  return (
+  <HashRouter>
+    <Route path="/about" component={About}/>
+    <Route path='/' component={Home} />
+  </HashRouter>
+  )
 }
-  
- render() {
-    const {isLoading, movies} = this.state;
-   return (
-     <div>{isLoading ? "Loading...": movies.map(movie => {
-       console.log(movie)
-       return ( 
-       <Moive id={movie.id}
-        year={movie.year} 
-        title={movie.title}
-        summary={movie.summary} 
-        poster={movie.medium_cover_image} 
-        key={movie.id}
-        />)
-     })}</div>
-   )
-     
- }
- 
-}
-
 
 export default App;
