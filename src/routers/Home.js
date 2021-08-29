@@ -10,7 +10,9 @@ class Home extends React.Component {
     movies: [],
   };
 
-  
+  let a = () => {
+console.log("테스트")
+  }
 
   getMovies = async () => {
     const {
