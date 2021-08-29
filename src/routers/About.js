@@ -7,6 +7,7 @@ const a = () => {
 }
 
 
+let abc = "kigkm"
 
 const About = (props) => {
     console.log(props)
