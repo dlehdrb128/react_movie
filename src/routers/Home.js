@@ -37,7 +37,7 @@ class Home extends React.Component {
           </div>
         ) : (
           movies.map((movie) => {
-            console.log(movie);
+    
             return (
               <Moive
                 id={movie.id}
