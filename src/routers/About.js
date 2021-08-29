@@ -4,6 +4,7 @@ const a = () => {};
 
 let kikmg = "5";
 let abc = "kigkm";
+let ok = "힘들다..";
 
 const About = (props) => {
   console.log(props);
